@@ -67,7 +67,8 @@ article > img, article > a > img, article > .webvid {
 }
 
 .webvid {
-	padding:56.25% 0 0 0;
+	width:100%;
+	aspect-ratio:16 / 9;
 	position:relative;
 	background-color:black;
 	margin: 20px 0;
