@@ -22,7 +22,19 @@
 
 html {
     margin: 0 auto;
-	max-width: 1000px;
+}
+
+body {
+	max-width: 800px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 25px 25px 25px 25px;
+    margin:auto;
+    line-height: 1.5;
+	background-color: #111118;
+	background-image:url('/resources/paper.png');
+	background-attachment: fixed;
+	overflow-x: hidden;
 }
 
 h1, h2, h3 {
@@ -38,6 +50,7 @@ h1 {
 }
 
 h2 {
+	margin-top:50px;
     font-size: 45px;
 }
 
@@ -48,18 +61,6 @@ h3 {
 
 body {
 	font-family: body, serif;
-}
-
-body {
-    font-size: 20px;
-    color: #FFFFFF;
-    padding: 25px 25px 25px 25px;
-    margin:0;
-    line-height: 2;
-	background-color: #111118;
-	background-image:url('/resources/paper.png');
-	background-attachment: fixed;
-	overflow-x: hidden;
 }
 
 article > img, article > a > img, article > .webvid {
