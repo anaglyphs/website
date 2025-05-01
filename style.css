@@ -51,7 +51,6 @@ h1 {
 }
 
 h2 {
-	margin-top:2em;
     font-size: 2em;
 }
 
@@ -64,8 +63,21 @@ body {
 	font-family: body, serif;
 }
 
-article > img, article > a > img, article > .webvid {
-    width: 100%;
+section {
+	padding: 2em 0px;
+	position:relative;
+}
+
+section:nth-child(even)::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100vw;
+	height: 100%;
+	z-index: -1;
+	background-color: #222229;
 }
 
 .webvid {
@@ -103,19 +115,15 @@ a img {
 @media screen and (max-width: 700px) {
 
     h1 {
-        font-size: 35px;
+        font-size: 2em;
     }
 
     h2, h3 {
-        font-size: 25px;
+        font-size: 1.5em;
     }
 	
-	/* article { */
-		/* margin:0 20px 0 20px; */
-	/* } */
-	
-	main > * {
-		padding:0 20px 0 20px;
+	section, header {
+		padding: 20px;
 	}
 	
 	body {
