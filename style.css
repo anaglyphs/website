@@ -59,6 +59,16 @@ h3 {
     font-size: 1.5em;
 }
 
+details {
+	border-bottom: 1px solid white;
+	margin-top: 20px;
+}
+
+details summary {
+	font-family: title;
+	font-size: 1.5em;
+}
+
 body {
 	font-family: body, serif;
 }
@@ -66,6 +76,10 @@ body {
 section {
 	padding: 2em 0px;
 	position:relative;
+}
+
+img {
+	width:100%;
 }
 
 section:nth-child(even)::before {
