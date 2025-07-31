@@ -1,62 +1,77 @@
 @font-face {
-    font-family: body;
-    src: url('/resources/D-DIN.otf');
+	font-family: body;
+	src: url("/resources/D-DIN.otf");
 }
 
 @font-face {
-    font-family: body;
-    src: url('/resources/D-DIN-Bold.otf');
-    font-weight: bold;
+	font-family: body;
+	src: url("/resources/D-DIN-Bold.otf");
+	font-weight: bold;
 }
 
 @font-face {
-    font-family: title;
-    src: url('/resources/D-DINExp.otf');
+	font-family: title;
+	src: url("/resources/D-DINExp.otf");
 }
 
 @font-face {
-    font-family: title;
-    src: url('/resources/D-DINExp-Bold.otf');
-    font-weight: bold;
+	font-family: title;
+	src: url("/resources/D-DINExp-Bold.otf");
+	font-weight: bold;
 }
 
 html {
-    margin: 0 auto;
+	margin: 0 auto;
 	font-size: 1.2em;
 }
 
 body {
 	max-width: 800px;
-    font-size: 1em;
-    color: #FFFFFF;
-    padding: 25px 25px 25px 25px;
-    margin:auto;
-    line-height: 1.5;
+	font-size: 1em;
+	color: #ffffff;
+	padding: 25px 25px 25px 25px;
+	margin: auto;
+	line-height: 1.5;
 	background-color: #111118;
-	background-image:url('/resources/paper.png');
-	background-attachment: fixed;
+	background-image: url("/resources/paper.png");
 	overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+.major,
+.minor {
 	line-height: 1;
 	font-weight: bold;
-	margin:10px 0 10px 0;
-    font-family: title, sans-serif;
+	font-family: title, sans-serif;
+}
+
+h1,
+h2,
+h3 {
+	margin: 10px 0 10px 0;
+}
+
+.major,
+.minor {
+	margin: 20px 0 20px 0;
 }
 
 h1 {
-    font-size: 3em;
-    line-height: 1.2;
+	font-size: 3em;
+	line-height: 1.2;
 }
 
-h2 {
-    font-size: 2em;
+h2,
+.major {
+	font-size: 2em;
 }
 
-h3 {
+h3,
+.minor {
 	font-weight: normal;
-    font-size: 1.5em;
+	font-size: 1.5em;
 }
 
 details {
@@ -75,11 +90,11 @@ body {
 
 section {
 	padding: 2em 0px;
-	position:relative;
+	position: relative;
 }
 
 img {
-	width:100%;
+	width: 100%;
 }
 
 section:nth-child(even)::before {
@@ -92,22 +107,23 @@ section:nth-child(even)::before {
 	height: 100%;
 	z-index: -1;
 	background-color: #222229;
+	background-image: url("/resources/paper.png");
 }
 
 .webvid {
-	width:100%;
-	aspect-ratio:16 / 9;
-	position:relative;
-	background-color:black;
+	width: 100%;
+	aspect-ratio: 16 / 9;
+	position: relative;
+	background-color: black;
 	margin: 20px 0;
 }
 
 .webvid * {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
 }
 
 iframe {
@@ -115,37 +131,38 @@ iframe {
 }
 
 a {
-	color: #00EEEE;
+	color: #00eeee;
 }
 
 a:hover {
-    color: #FF4444;
+	color: #ff4444;
 }
 
 a img {
-	vertical-align:top;
+	vertical-align: top;
 }
 
 @media screen and (max-width: 700px) {
+	h1 {
+		font-size: 2em;
+	}
 
-    h1 {
-        font-size: 2em;
-    }
+	h2,
+	h3 {
+		font-size: 1.5em;
+	}
 
-    h2, h3 {
-        font-size: 1.5em;
-    }
-	
-	section, header {
+	section,
+	header {
 		padding: 20px;
 	}
-	
+
 	body {
-		padding-left:0px;
-		padding-right:0px;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
-	
+
 	.verticalvid {
-		padding:100% 0 0 0;
+		padding: 100% 0 0 0;
 	}
 }

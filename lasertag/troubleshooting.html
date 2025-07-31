@@ -13,68 +13,70 @@
 <main>
 
 <h1>Troubleshooting</h1>
-<p>Lasertag is a work-in-progress game, so it isn't a seamless experience.
-Meta Quest headsets are also full of quirks that can cause problems. 
+<p>Lasertag is a work-in-progress game, so some rough edges are expected.
+Meta Quest headsets also have a few quirks that can occasionally cause problems.
 
 <details>
-	<summary>My headsets won't connect!</summary>
+	<summary>Headsets won't connect</summary>
 	<p><b>Your headsets must be on the same WiFi network.</b>
 	Meta headsets have a habit of disconnecting from networks when asleep
 	or switching to other known networks in the same space.
-	
+
 	<p><b>Some WiFi networks won't work.</b>
-	Office and school networks often stop devices 
+	Office and school networks often stop devices
 	from talking to each other.
-	You may be able to use a phone or Windows PC hotspot, 
+	You may be able to use a phone or Windows PC hotspot,
 	but these have limited range.
 </details>
 
 <details>
-	<summary>My headsets won't collocate!</summary>
+	<summary>Headsets won't collocate</summary>
 	<p>First, make sure they all have a proper internet connection.
-	While Lasertag connects over LAN, collocation unfortunately 
+	While Lasertag connects over LAN, collocation unfortunately
 	relies on Meta's cloud services.
-	
-	<p>Make sure each headset gets a good look at its surroundings. 
+
+	<p>Make sure each headset gets a good look at its surroundings.
 	If only some headsets fail, show them around
 	the playspace more and try connecting again.
-	
-	<p>Meta's collocation system isn't the most robust. 
+
+	<p>Meta's collocation system isn't the most robust.
 	Sometimes you just need to reboot troublesome headsets.
 	Meta service outages can also prevent collocation from working.
 </details>
 
 <details>
-	<summary>I get a pop-up saying 'you've moved too far!'</summary>
+	<summary>'Moved too far!' popup error</summary>
 	<p>Meta headsets restrict movement, even in mixed reality, to a certain
 	radius from the 'origin' (which is where you either launched the app
 	or last re-centered). This radius is ~20 meters.
-	
+
 	<p>You can prevent this pop-up by disabling 'physical space features' in the settings app.
 	<b>Beware these resulting quirks!</b>
 	<ul>
-		<li>The system boundary is dangerous disabled in all VR apps!
+		<li>The system boundary isdangerously disabled in all VR apps!
 		<li>Passthrough is disabled in the system home menu.
 		<li>Screen recordings won't capture passthrough. You'll just see a black void.
 	</ul>
 	<p>Once you are done playing Lasertag, or if you wish to capture video,
 	make sure to turn this back on!
-	
+
 	<img src="guardian disable.jpg">
 </details>
 
 <details>
-	<summary>My video recordings of the game are black!</summary>
+	<summary>Video recordings are black</summary>
 	<p>See above. Make sure 'physical space features' are enabled
 	when recording video.
 </details>
 
 <details>
-	<summary>I can shoot through and see people's heads through walls!</summary>
+	<summary>Shooting or seeing people through walls</summary>
 	<p>If you're playing on Quest 3 or 3s, make sure you
 	give the app 'spatial data' permission. You may have to grant it
-	in system settings.
-	
+	in system settings. Sometimes headsets can't accurately
+	understand your environment due to reflective surfaces,
+	light glare, etc.
+
 	<p>If you're playing on Quest 2 or Pro, these headsets unfortunately
 	lack features necessary to understand and respond to your environment.
 </details>
