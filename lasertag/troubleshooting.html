@@ -17,7 +17,28 @@
 Meta Quest headsets also have a few quirks that can occasionally cause problems.
 
 <details>
-	<summary>Headsets won't connect</summary>
+	<summary>Dislocated heads and tracking drift</summary>
+	<p>This is an issue on Meta's side and the biggest issue facing the game :(</p>
+
+	<p>The Quest headsets are primarily meant for single-room indoor use.
+		Their tracking and localization systems aren’t tuned
+		for arena-scale play, and spatial anchors are prone to drift.
+		Because of this, headsets won’t stay perfectly calibrated
+		to each other over time.</p>
+
+	<p>I am working on ways to solve this using both QR-code-like markers
+		and comparing environment scans at different times, but it will
+		be some time before I or Meta solve this issue.</p>
+
+	<p>In the meantime, you can use the <b>Recalibrate</b> option
+		in the in-game menu to correct drift during play.
+		I also recommend sticking to well-lit indoor spaces
+		with lots of contrast and detail
+		to help reduce drift issues.</p>
+</details>
+
+<details>
+	<summary>Won't connect</summary>
 	<p><b>Your headsets must be on the same WiFi network.</b>
 	Meta headsets have a habit of disconnecting from networks when asleep
 	or switching to other known networks in the same space.
@@ -33,7 +54,7 @@ Meta Quest headsets also have a few quirks that can occasionally cause problems.
 </details>
 
 <details>
-	<summary>Headsets won't collocate</summary>
+	<summary>Won't collocate</summary>
 	<p>First, make sure they all have a proper internet connection.
 	While Lasertag connects over LAN, collocation unfortunately
 	relies on Meta's cloud services.
@@ -67,7 +88,7 @@ Meta Quest headsets also have a few quirks that can occasionally cause problems.
 </details>
 
 <details>
-	<summary>Video recordings are black</summary>
+	<summary>Black video recordings</summary>
 	<p>See above. Make sure 'physical space features' are enabled
 	when recording video.
 </details>
@@ -82,6 +103,17 @@ Meta Quest headsets also have a few quirks that can occasionally cause problems.
 
 	<p>If you're playing on Quest 2 or Pro, these headsets unfortunately
 	lack features necessary to understand and respond to your environment.
+</details>
+
+<details>
+	<summary>'Multiple Devices Can't Access This App at the Same Time' popup error</summary>
+	<p>Enabling App Sharing on <i>any</i> single headset
+		causes this popup on all other headsets linked to the same account.</p>
+	<p>You can disable App Sharing even if you don't have access physical to the headset
+		here:
+		<a href="https://auth.meta.com/settings/my/devices/" target="_blank">
+			https://auth.meta.com/settings/my/devices/ ➔
+		</a></p>
 </details>
 
 </main>
