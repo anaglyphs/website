@@ -84,8 +84,8 @@ details summary {
 }
 
 body {
+	padding: 2em 0;
 	font-family: body, serif;
-	padding: 0;
 }
 
 section {
@@ -93,7 +93,8 @@ section {
 	position: relative;
 }
 
-.center-width {
+.center-width,
+.webvid {
 	max-width: 800px;
 	margin: auto;
 
@@ -119,11 +120,11 @@ section:nth-child(even)::before {
 }
 
 .webvid {
-	width: 100%;
 	aspect-ratio: 16 / 9;
 	position: relative;
 	background-color: black;
-	margin: 20px 0;
+	padding: 0;
+	margin: 1em auto;
 }
 
 .webvid * {
@@ -184,10 +185,6 @@ a img {
 		padding: 0;
 		padding-left: 0px;
 		padding-right: 0px;
-	}
-
-	.verticalvid {
-		padding: 100% 0 0 0;
 	}
 
 	.carousel {
