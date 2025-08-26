@@ -21,19 +21,21 @@
 }
 
 html {
-	margin: 0 auto;
+	margin: 0;
+	padding: 0;
 	font-size: 1.2em;
 }
 
 body {
 	font-size: 1em;
 	color: #ffffff;
-	padding: 25px 0 25px 0;
+	padding: 2em 0;
 	margin: auto;
 	line-height: 1.5;
 	background-color: #111118;
 	background-image: url("/resources/paper.png");
 	overflow-x: hidden;
+	font-family: body, serif;
 }
 
 h1,
@@ -83,20 +85,16 @@ details summary {
 	font-size: 1.5em;
 }
 
-body {
-	padding: 2em 0;
-	font-family: body, serif;
-}
-
 section {
-	padding: 2em 0px;
+	padding: 2em 0;
 	position: relative;
 }
 
 .center-width,
 .webvid {
 	max-width: 800px;
-	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
 
 	padding-left: 20px;
 	padding-right: 20px;
