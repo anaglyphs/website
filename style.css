@@ -24,16 +24,15 @@ html {
 	margin: 0;
 	padding: 0;
 	font-size: 1.2em;
+	line-height: 1.5;
 }
 
 body {
 	font-size: 1em;
 	color: #ffffff;
-	padding: 2em 0;
-	margin: auto;
-	line-height: 1.5;
+	padding: 0;
+	margin: 4em auto;
 	background-color: #111118;
-	background-image: url("/resources/paper.png");
 	overflow-x: hidden;
 	font-family: body, serif;
 }
@@ -86,8 +85,16 @@ details summary {
 }
 
 section {
-	padding: 2em 0;
 	position: relative;
+	padding: 2em 0;
+}
+
+section:first-of-type {
+	padding-top: 0;
+}
+
+section:last-of-type {
+	padding-bottom: 0;
 }
 
 .center-width,
@@ -114,7 +121,6 @@ section:nth-child(even)::before {
 	height: 100%;
 	z-index: -1;
 	background-color: #222229;
-	background-image: url("/resources/paper.png");
 }
 
 .webvid {
@@ -187,5 +193,9 @@ a img {
 
 	.carousel {
 		height: 100vw;
+	}
+
+	.hide-mobile {
+		display: none;
 	}
 }

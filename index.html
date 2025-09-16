@@ -12,60 +12,57 @@
 
 <main>
 
-<section>
+<section style="position:relative;">
+
 	<header class="center-width">
-			<img class="logo" src="anaglyph.png" style="width:100px;">
+		<img class="logo" src="anaglyph.png" style="width:100px;">
 
 		<div style="display:inline-block;">
 			<h1 style="margin:0;">anaglyph</h1>
 		</div>
 	</header>
 
-	<div class="webvid" style="aspect-ratio:16:9;">
+	<div class="webvid" style="max-width:1000px; aspect-ratio:16:9; background-color:black;">
 		<iframe src="https://player.vimeo.com/video/1071128174?h=dddc621&autoplay=1&loop=1&color=e65f54&byline=0&portrait=0&muted=1"
 		allow="autoplay; fullscreen; picture-in-picture"
-		style = "height:100%;"allowfullscreen></iframe>
+		style = "width:100%;"allowfullscreen></iframe>
 	</div>
 
 	<div class="center-width">
 		<h2>We're currently making <i>Lasertag</i></h2>
 
-		<p><b>Lasertag</b> (one word) is a mixed reality game that
-		turns any space into a laser tag arena
-		for you and your friends.
-
-		<p>The game scans your room in real time so virtual bullets
-		collide with real-world walls.
-		Headsets connect to each other automatically,
-		making setup super easy.</p>
+		<p><b>Lasertag</b> is a game for Meta Quest 3 and 3S that
+		turns any space into a laser tag arena for you and your friends</p>
 	</div>
 </section>
 
-<section class="center-width">
+<section class="center-width" style="display: flex;">
 
-	<p class="major"><a href="https://www.meta.com/experiences/lasertag/25121192657495694/" target="_blank">
-	Get the game! ➔</a></p>
+	<div style="flex:1;">
+		<h3>Setup is super easy</h3>
 
-	<p class="minor"><a href="https://discord.com/invite/DgTqG5A6BD" target="_blank">
-	Join our Discord ➔</a></p>
+		<p>Nearby headsets connect and align automatically, and the game scans your
+		environment as you play.
+		You can start a game with a single button press without any prior setup.</p>
 
-	<p class="minor"><a href="https://github.com/anaglyphs/lasertag" target="_blank">
-	GitHub repo ➔</a></p>
+		<p class="major"><a href="https://www.meta.com/experiences/lasertag/25121192657495694/" target="_blank">
+		Get the game! ➔</a></p>
 
-	<br>
+		<p class="minor"><a href="https://discord.com/invite/DgTqG5A6BD" target="_blank">
+		Join our Discord ➔</a></p>
 
-	<p>Right now we're focusing on core features, so the game is pretty bare bones.
-	There are also plenty of bugs. We’re working on it!
+		<p class="minor"><a href="https://github.com/anaglyphs/lasertag" target="_blank">
+		GitHub repo ➔</a></p>
+	</div>
 
-	<p>We recommend playing on Quest 3 or 3s, as older headsets lack features important to the game.
-
-	<p>The in-game manual has more tips for setup and gameplay.
-
+	<div class="hide-mobile" style="flex:0.4; position:relative;">
+		<div style="position:relative; width:100%; height:100%; bottom:-2em;">
+		<img src="lasertag/images/lachlan.png" style="position:absolute; width:100%; bottom:0;">
+		</div>
+	</div>
 </section>
 
 <section>
-	<h2 class="center-width">Screenshots</h2>
-	<br>
 	<div class="carousel" dir="ltr"
 	onclick="event.srcElement.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});">
 		<img src="lasertag/screenshots/armory1.png" />
@@ -80,22 +77,7 @@
 	</ul>
 </section>
 
-<section class="center-width">
-
-	<h2>People</h2>
-	<ul>
-		<li>neto.blaster - concept artist
-
-		<li><a href="https://trev3d.com/" target="_blank">
-		Julian Triveri ➔</a> - programmer and artist
-
-		<li><a href="https://fizzyapple12.com/" target="_blank">
-		FizzyApple12 ➔</a> - programmer and graphic designer
-	</ul>
-
-</section>
-
-<section class="center-width">
+<!--<section class="center-width">
 
 	<h2>Special thanks</h2>
 	<p>In no particular order!</p>
@@ -124,6 +106,9 @@
 
 		<li><a href="https://www.matthewstanciu.com" target="_blank">
 		Matthew Stanciu ➔</a>
+
+		<li><a href="https://lachlanjc.com" target="_blank">
+		Lachlan Campbell ➔</a>
 
 		<li><a href="https://www.artstation.com/ratlz" target="_blank">
 		Blake Edwards ➔</a>
@@ -180,10 +165,16 @@
 		Nico Uthe ➔</a>
 	</ul>
 
-</section>
+</section>-->
 
 </main>
 
+<footer class="center-width">
+	<p>A game by <a href="htts://trev3d.com" target="_blank">Julian Triveri ➔</a> </p>
+	<p>With previous contributions by
+		<a href="https://fizzyapple12.com" target="_blank">Hazel Roeder ➔</a>
+		and Ernesto Tangassi Lucio.</p>
+</footer>
 
 </body>
 </html>
