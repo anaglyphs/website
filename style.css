@@ -161,7 +161,7 @@ footer::before {
 .carousel img {
 	height: auto;
 	max-height: 60vh; /* optional limit */
-	max-width: 95%;
+	max-width: 1000px;
 	flex-shrink: 0;
 	scroll-snap-align: center;
 	object-fit: contain;
