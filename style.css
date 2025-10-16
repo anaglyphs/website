@@ -84,7 +84,8 @@ details summary {
 	font-size: 1.5em;
 }
 
-section {
+section,
+footer {
 	position: relative;
 	padding: 2em 0;
 }
@@ -98,7 +99,7 @@ section:last-of-type {
 }
 
 section:nth-of-type(even)::before,
-footer section::before {
+footer::before {
 	content: "";
 	position: absolute;
 	top: 0;
