@@ -154,16 +154,24 @@ footer section::before {
 	padding: 20px;
 	scroll-snap-type: x mandatory;
 	scroll-behavior: smooth;
-	align-items: flex-start; /* align shorter images at top */
+	align-items: flex-start;
 }
 
 .carousel img {
 	height: auto;
-	max-height: 500px; /* optional limit */
+	max-height: 60vh; /* optional limit */
 	max-width: 95%;
 	flex-shrink: 0;
 	scroll-snap-align: center;
 	object-fit: contain;
+}
+
+.carousel img:first-of-type {
+	margin-left: 50vw;
+}
+
+.carousel img:last-of-type {
+	margin-right: 50vw;
 }
 
 iframe {
