@@ -59,9 +59,18 @@
 
 	<div class="hide-mobile" style="flex:0.4; position:relative;">
 		<div style="position:relative; width:100%; height:100%; bottom:-2em;">
-		<img src="lasertag/images/lachlan.png" style="position:absolute; width:100%; bottom:0;">
+		<img id="easteregg" draggable="true" src="lasertag/images/lachlan.png" style="position:absolute; width:100%; bottom:0;">
 		</div>
 	</div>
+
+	<script>
+		const egg = document.getElementById('easteregg');
+		egg.addEventListener('dragstart', (e) => {
+			console.log("wtf");
+			e.preventDefault();
+			window.location.href = 'https://www.youtube.com/watch?v=y06fozFuVvE';
+		});
+	</script>
 </section>
 
 <section style="padding:0;">
