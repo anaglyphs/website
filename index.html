@@ -1,20 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-
-	<meta charset="UTF-8">
-	<title>Anaglyph</title>
-	<link rel="stylesheet" href="/style.css">
-	<meta name="viewport" content="width=device-width, height=device-height">
-
-</head>
-<body style="margin:0 auto;">
-
-<main>
-
-<section style="position:relative; padding-top:0;">
-
-	<!--<header class="center-width">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Anaglyph</title>
+		<link rel="stylesheet" href="/style.css" />
+		<meta
+			name="viewport"
+			content="width=device-width, height=device-height"
+		/>
+	</head>
+	<body style="margin: 0 auto">
+		<main>
+			<section style="position: relative; padding-top: 0">
+				<!--<header class="center-width">
 		<img class="logo" src="anaglyph.png" style="width:100px;">
 
 		<div style="display:inline-block;">
@@ -22,178 +20,135 @@
 		</div>
 	</header>-->
 
-	<div class="vid" id="mainvid">
+				<div class="vid" id="mainvid">
+					<iframe
+						src="https://player.vimeo.com/video/1071128174?h=dddc621&autoplay=1&loop=1&color=e65f54&byline=0&portrait=0&muted=1"
+						allow="autoplay; fullscreen; picture-in-picture"
+						style="width: 100%"
+						allowfullscreen
+					></iframe>
+				</div>
 
-		<iframe src="https://player.vimeo.com/video/1071128174?h=dddc621&autoplay=1&loop=1&color=e65f54&byline=0&portrait=0&muted=1"
-		allow="autoplay; fullscreen; picture-in-picture"
-		style = "width:100%;"allowfullscreen></iframe>
-	</div>
+				<div class="center-width">
+					<h2>We're currently making <i>Lasertag</i></h2>
 
-	<div class="center-width">
-		<h2>We're currently making <i>Lasertag</i></h2>
+					<p>
+						<b>Lasertag</b> is a game for Meta Quest 3 and 3S that
+						turns any space into a laser tag arena for you and your
+						friends
+					</p>
+				</div>
+			</section>
 
-		<p><b>Lasertag</b> is a game for Meta Quest 3 and 3S that
-		turns any space into a laser tag arena for you and your friends</p>
-	</div>
-</section>
+			<section class="center-width" style="display: flex">
+				<div style="flex: 1">
+					<h3>No setup required</h3>
 
-<section class="center-width" style="display: flex;">
+					<p>
+						Lasertag scans your environment while you play, and
+						players connect automatically with a single button
+						press, so jumping in is super easy. Grab your friends,
+						find a space, and cause chaos.
+					</p>
 
-	<div style="flex:1;">
-		<h3>No setup required</h3>
+					<p class="major">
+						<a
+							href="https://www.meta.com/experiences/lasertag/25121192657495694/"
+							target="_blank"
+						>
+							Get the game! ➔</a
+						>
+					</p>
 
-		<p>Lasertag scans your environment while you play,
-			and players connect automatically with a single button press,
-			so jumping in is super easy.
-			Grab your friends, find a space, and cause chaos.</p>
+					<p class="minor">
+						<a
+							href="https://discord.com/invite/DgTqG5A6BD"
+							target="_blank"
+						>
+							Join our Discord ➔</a
+						>
+					</p>
 
-		<p class="major"><a href="https://www.meta.com/experiences/lasertag/25121192657495694/" target="_blank">
-		Get the game! ➔</a></p>
+					<p>
+						<a
+							href="https://github.com/anaglyphs/lasertag"
+							target="_blank"
+						>
+							Clone from GitHub ➔</a
+						>
+					</p>
+				</div>
 
-		<p class="minor"><a href="https://discord.com/invite/DgTqG5A6BD" target="_blank">
-		Join our Discord ➔</a></p>
+				<div class="hide-mobile" style="flex: 0.4; position: relative">
+					<div
+						style="
+							position: relative;
+							width: 100%;
+							height: 100%;
+							bottom: -2em;
+						"
+					>
+						<img
+							id="easteregg"
+							draggable="true"
+							src="lasertag/images/lachlan.png"
+							style="position: absolute; width: 100%; bottom: 0"
+						/>
+					</div>
+				</div>
 
-		<p><a href="https://github.com/anaglyphs/lasertag" target="_blank">
-		Clone from GitHub ➔</a></p>
-	</div>
+				<script>
+					const egg = document.getElementById("easteregg");
+					egg.addEventListener("dragstart", (e) => {
+						alert("easter egg: hi matthew");
+						e.preventDefault();
+					});
+				</script>
+			</section>
 
-	<div class="hide-mobile" style="flex:0.4; position:relative;">
-		<div style="position:relative; width:100%; height:100%; bottom:-2em;">
-		<img id="easteregg" draggable="true" src="lasertag/images/lachlan.png" style="position:absolute; width:100%; bottom:0;">
-		</div>
-	</div>
+			<section style="padding: 0">
+				<div
+					class="carousel"
+					dir="ltr"
+					onclick="event.srcElement.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});"
+				>
+					<img src="lasertag/screenshots/armory1.png" />
+					<img src="lasertag/screenshots/sfpark.png" />
+					<img src="lasertag/screenshots/bechtel1.png" />
+					<img src="lasertag/screenshots/waffle3.png" />
+					<img src="lasertag/screenshots/armory2.png" />
+					<img src="lasertag/screenshots/bechtel2.png" />
+					<img src="lasertag/screenshots/fwa3.png" />
+					<img src="lasertag/screenshots/bechtel6.png" />
+				</div>
+			</section>
+		</main>
 
-	<script>
-		const egg = document.getElementById('easteregg');
-		egg.addEventListener('dragstart', (e) => {
-   			alert("easter egg: hi matthew");
-			e.preventDefault();
-		});
-	</script>
-</section>
+		<footer class="center-width">
+			<h3 style="margin-bottom: 1em">
+				A game by
+				<a href="https://trev3d.com" target="_blank"
+					>Julian Triveri ➔</a
+				>
+			</h3>
+			<p>
+				with generous help from
+				<a href="https://fizzyapple12.com" target="_blank"
+					>Hazel Roeder ➔</a
+				>, Ernesto Tangassi Lucio, and
+				<a href="thanks.html">many others</a>.
+			</p>
 
-<section style="padding:0;">
-	<div class="carousel" dir="ltr"
-	onclick="event.srcElement.scrollIntoView({behavior: 'smooth', block: 'nearest', inline: 'center'});">
-		<img src="lasertag/screenshots/armory1.png" />
-		<img src="lasertag/screenshots/sfpark.png" />
-		<img src="lasertag/screenshots/bechtel1.png" />
-		<img src="lasertag/screenshots/waffle3.png" />
-		<img src="lasertag/screenshots/armory2.png" />
-		<img src="lasertag/screenshots/bechtel2.png" />
-		<img src="lasertag/screenshots/fwa3.png" />
-		<!--<img src="lasertag/screenshots/bechtel3.png" />-->
-		<!--<img src="lasertag/screenshots/bechtel4.png" />-->
-		<img src="lasertag/screenshots/bechtel6.png" />
-	</ul>
-</section>
+			<div style="margin-top: 3em">
+				<img
+					src="anaglyph.png"
+					style="height: auto; max-height: 100px; bottom: 0"
+				/>
 
-<!--<section class="center-width">
-
-	<h2>Special thanks</h2>
-	<p>In no particular order!</p>
-	<ul>
-		<li><a href="https://envision.center">
-		Purdue University Envision Center ➔
-		</a></li>
-
-		<li><a href="https://strikervr.com/" target="_blank">
-		StrikerVR ➔</a>
-
-		<li><a href="https://visitdreampark.com">
-		DreamPark ➔
-		</a></li>
-
-		<li><a href="https://www.purduehackers.com" target="_blank">
-		Purdue Hackers ➔</a></li>
-
-		<li><a href="https://www.freeroam.ar/" target="_blank">
-		freeroam.ar ➔</a></li>
-
-		<br>
-
-		<li><a href="https://www.linkedin.com/in/george-takahashi/" target="_blank">
-		George Takahashi ➔</a>
-
-		<li><a href="https://www.matthewstanciu.com" target="_blank">
-		Matthew Stanciu ➔</a>
-
-		<li><a href="https://lachlanjc.com" target="_blank">
-		Lachlan Campbell ➔</a>
-
-		<li><a href="https://www.artstation.com/ratlz" target="_blank">
-		Blake Edwards ➔</a>
-
-		<li><a href="https://discord.com/invite/Emxq4dBj8G" target="_blank">
-		MelancholySeabiscuit ➔</a>
-
-		<li><a href="https://www.artstation.com/uninspirational" target="_blank">
-		William Yang ➔</a>
-
-		<li><a href="https://alanocull.com" target="_blank">
-		Alan O'Cull ➔</a>
-
-		<li><a href="https://hellfire.tv" target="_blank">
-		Ben B. ➔</a>
-
-		<li><a href="https://www.instagram.com/studio.maverick/" target="_blank">
-		StudioMaverick ➔</a>
-
-		<li><a href="https://www.instagram.com/iceseatheott/" target="_blank">
-		IceSea ➔</a>
-
-		<li><a href="https://www.linkedin.com/in/andres-uzcategui-a5699a200">
-		Andres Uzcategui ➔
-		</a></li>
-
-		<li><a href="https://ieeexplore.ieee.org/author/970114994151628">
-		Alex Sinelli ➔</a></li>
-
-		<li><a href="https://www.jackhogan.me" target="_blank">
-		Jack Hogan ➔</a>
-
-		<li><a href="https://x.com/strakacher21" target="_blank">
-		strakacher21 ➔</a>
-
-		<li>fleech
-
-		<li><a href="https://www.codehusky.com" target="_blank">
-		Loki ➔</a>
-
-		<li><a href="https://x.com/Aidan_Wolf" target="_blank">
-		Aidan Wolf ➔</a>
-
-		<li><a href="https://mikameel.framer.website" target="_blank">
-		Mika Haak ➔</a>
-
-		<li><a href="https://x.com/allan_yde" target="_blank">
-		Allan Yde ➔</a>
-
-		<li><a href="https://x.com/kevando_" target="_blank">
-		Kevin Habich ➔</a>
-
-		<li><a href="https://www.linkedin.com/in/nico-uthe-961818aa/" target="_blank">
-		Nico Uthe ➔</a>
-	</ul>
-
-</section>-->
-
-</main>
-
-<footer class="center-width">
-		<p>A game by <a href="https://trev3d.com" target="_blank">Julian Triveri ➔</a>
-		<br>with generous help from
-			<a href="https://fizzyapple12.com" target="_blank">Hazel Roeder ➔</a>
-			and Ernesto Tangassi Lucio.</p>
-
-		<div style="margin-top:3em;">
-			<img src="anaglyph.png" style="height:auto; max-height:100px; bottom:0;">
-
-			<div style="display:inline-block;">
-				<h1 style="margin:0;">anaglyph</h1>
+				<div style="display: inline-block">
+					<h1 style="margin: 0">anaglyph</h1>
+				</div>
 			</div>
-		</div>
-</footer>
-
-</body>
+		</footer>
+	</body>
 </html>
