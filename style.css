@@ -148,6 +148,10 @@ footer::before {
 	background-color: black;
 }
 
+.fullwidth {
+	width: 100%;
+}
+
 .carousel {
 	display: flex;
 	overflow-x: auto;
