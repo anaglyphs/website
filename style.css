@@ -191,6 +191,7 @@ a img {
 
 .columns > * {
 	flex: 1;
+	align-self: flex-start;
 }
 
 @media screen and (max-width: 1000px) {
