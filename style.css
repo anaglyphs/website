@@ -116,11 +116,12 @@ footer::before {
 	margin-left: auto;
 	margin-right: auto;
 
-	padding-left: 20px;
-	padding-right: 20px;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
-.vid {
+.vid,
+.image {
 	width: 100%;
 	aspect-ratio: 16 / 9;
 	background-color: black;
@@ -138,10 +139,6 @@ footer::before {
 	max-width: 1000px;
 	margin-top: clamp(0px, calc((100vw - 1000px) / 2), 3em);
 	margin-bottom: 3em;
-}
-
-.fullwidth {
-	width: 100%;
 }
 
 .carousel {
@@ -204,6 +201,12 @@ a img {
 	}
 }
 
+@media screen and (min-width: 600px) {
+	.columns .center-width {
+		padding: 0;
+	}
+}
+
 @media screen and (max-width: 600px) {
 	h1 {
 		font-size: 2em;
@@ -237,9 +240,5 @@ a img {
 	.columns {
 		display: block;
 		padding: 0;
-	}
-
-	.dont-pad-mobile {
-		padding: 0 !important;
 	}
 }
